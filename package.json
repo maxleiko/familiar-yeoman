@@ -1,0 +1,13 @@
+{
+  "name": "familiar-yeoman",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^4.0.0",
+    "yeoman-environment": "^2.0.5"
+  },
+  "devDependencies": {
+    "generator-jhipster": "^4.10.2"
+  }
+}
