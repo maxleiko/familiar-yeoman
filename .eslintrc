@@ -1,0 +1,3 @@
+extends: kevoree
+rules:
+  no-console: 0

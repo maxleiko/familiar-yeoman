@@ -8,17 +8,19 @@ process.on('unhandledRejection', (err) => {
 });
 
 const tmpDir = tmp.dirSync();
-tmpDir.removeCallback();
 console.log('Generating in:', tmpDir.name);
 
 const args = [];
-const opts = {
-  cwd: tmpDir.name
-};
+const options = { cwd: tmpDir.name };
 const model = {};
-const env = yeoman.createEnv(args, opts, new TerminalAdapter(model));
-env.register('./node_modules/generator-jhipster/generators/app/index.js', 'jhipster');
+const env = yeoman.createEnv(args, options, new TerminalAdapter(model));
+env.on('error', (err) => {
+  console.error(err.stack);
+  process.exit(1);
+});
 
-// TODO quit before the writing is done
+env.register(require.resolve('generator-jhipster/generators/app'));
 
-env.run('jhipster');
+env.run('jhipster', () => {
+  console.log('Done');
+});
