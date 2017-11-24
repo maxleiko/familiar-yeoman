@@ -22,10 +22,28 @@ async function main() {
     }
   });
 
-  while (true) {
-    const config = await generate(model);
-    model.addConfig(config);
-  }
+  generate(model)
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config))
+    .then(() => generate(model))
+    .then((config) => model.addConfig(config));
 }
 
 main();
