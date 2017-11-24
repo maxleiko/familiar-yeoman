@@ -1,0 +1,1002 @@
+{
+  "config": [
+    {
+      "promptValues": {
+        "packageName": "foo",
+        "nativeLanguage": "ar-ly"
+      },
+      "jhipsterVersion": "4.10.2",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": false,
+      "buildTool": "maven",
+      "enableSocialSignIn": true,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "c87347bf50c3813156ca41a1ebb3abf331013ab7",
+      "clientFramework": "angularX",
+      "useSass": true,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "otherModules": [
+        {
+          "name": "ignite-jhipster",
+          "version": "1.2.1"
+        }
+      ],
+      "enableTranslation": true,
+      "nativeLanguage": "ar-ly",
+      "languages": [
+        "ar-ly",
+        "hy"
+      ]
+    },
+    {
+      "promptValues": {
+        "packageName": "foo",
+        "nativeLanguage": "ar-ly"
+      },
+      "jhipsterVersion": "4.10.2",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "foo",
+      "authenticationType": "jwt",
+      "hibernateCache": "no",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "no",
+      "devDatabaseType": "no",
+      "prodDatabaseType": "no",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "eureka",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": true,
+      "jwtSecretKey": "8a971365cb2aa49b3ea9e548f315921a3040dc92",
+      "enableTranslation": true,
+      "applicationType": "microservice",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "otherModules": [
+        {
+          "name": "ignite-jhipster",
+          "version": "1.2.1"
+        }
+      ],
+      "nativeLanguage": "ar-ly",
+      "languages": [
+        "ar-ly",
+        "hy"
+      ],
+      "clientPackageManager": "yarn",
+      "skipClient": true,
+      "skipUserManagement": true
+    },
+    {
+      "promptValues": {
+        "packageName": "foo",
+        "nativeLanguage": "ar-ly"
+      },
+      "jhipsterVersion": "4.10.2",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "foo",
+      "authenticationType": "jwt",
+      "hibernateCache": "hazelcast",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": "elasticsearch",
+      "messageBroker": false,
+      "serviceDiscoveryType": "eureka",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "a587e2241585e1bf7b3a0088e2f3d8efd8931e5e",
+      "clientFramework": "angularX",
+      "useSass": true,
+      "clientPackageManager": "yarn",
+      "applicationType": "gateway",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "otherModules": [
+        {
+          "name": "ignite-jhipster",
+          "version": "1.2.1"
+        }
+      ],
+      "enableTranslation": true,
+      "nativeLanguage": "ar-ly",
+      "languages": [
+        "ar-ly",
+        "hy"
+      ]
+    }
+  ],
+  "tree": {
+    "root": true,
+    "__children": [
+      {
+        "type": "list",
+        "name": "applicationType",
+        "__children": [
+          {
+            "type": "answer",
+            "value": "monolith",
+            "__children": [
+              {
+                "type": "input",
+                "name": "baseName",
+                "__children": [
+                  {
+                    "type": "answer",
+                    "value": "foo",
+                    "__children": [
+                      {
+                        "type": "input",
+                        "name": "packageName",
+                        "__children": [
+                          {
+                            "type": "answer",
+                            "value": "foo",
+                            "__children": [
+                              {
+                                "type": "list",
+                                "name": "serviceDiscoveryType",
+                                "__children": [
+                                  {
+                                    "type": "answer",
+                                    "value": false,
+                                    "__children": [
+                                      {
+                                        "type": "list",
+                                        "name": "authenticationType",
+                                        "__children": [
+                                          {
+                                            "type": "answer",
+                                            "value": "jwt",
+                                            "__children": [
+                                              {
+                                                "type": "list",
+                                                "name": "databaseType",
+                                                "__children": [
+                                                  {
+                                                    "type": "answer",
+                                                    "value": "sql",
+                                                    "__children": [
+                                                      {
+                                                        "type": "list",
+                                                        "name": "prodDatabaseType",
+                                                        "__children": [
+                                                          {
+                                                            "type": "answer",
+                                                            "value": "mysql",
+                                                            "__children": [
+                                                              {
+                                                                "type": "list",
+                                                                "name": "devDatabaseType",
+                                                                "__children": [
+                                                                  {
+                                                                    "type": "answer",
+                                                                    "value": "h2Disk",
+                                                                    "__children": [
+                                                                      {
+                                                                        "type": "list",
+                                                                        "name": "hibernateCache",
+                                                                        "__children": [
+                                                                          {
+                                                                            "type": "answer",
+                                                                            "value": "ehcache",
+                                                                            "__children": [
+                                                                              {
+                                                                                "type": "list",
+                                                                                "name": "buildTool",
+                                                                                "__children": [
+                                                                                  {
+                                                                                    "type": "answer",
+                                                                                    "value": "maven",
+                                                                                    "__children": [
+                                                                                      {
+                                                                                        "type": "checkbox",
+                                                                                        "name": "serverSideOptions",
+                                                                                        "__children": [
+                                                                                          {
+                                                                                            "type": "answer",
+                                                                                            "value": [
+                                                                                              "enableSocialSignIn:true"
+                                                                                            ],
+                                                                                            "__children": [
+                                                                                              {
+                                                                                                "type": "list",
+                                                                                                "name": "clientFramework",
+                                                                                                "__children": [
+                                                                                                  {
+                                                                                                    "type": "answer",
+                                                                                                    "value": "angularX",
+                                                                                                    "__children": [
+                                                                                                      {
+                                                                                                        "type": "confirm",
+                                                                                                        "name": "useSass",
+                                                                                                        "__children": [
+                                                                                                          {
+                                                                                                            "type": "answer",
+                                                                                                            "value": true,
+                                                                                                            "__children": [
+                                                                                                              {
+                                                                                                                "type": "confirm",
+                                                                                                                "name": "enableTranslation",
+                                                                                                                "__children": [
+                                                                                                                  {
+                                                                                                                    "type": "answer",
+                                                                                                                    "value": true,
+                                                                                                                    "__children": [
+                                                                                                                      {
+                                                                                                                        "type": "list",
+                                                                                                                        "name": "nativeLanguage",
+                                                                                                                        "__children": [
+                                                                                                                          {
+                                                                                                                            "type": "answer",
+                                                                                                                            "value": "ar-ly",
+                                                                                                                            "__children": [
+                                                                                                                              {
+                                                                                                                                "type": "checkbox",
+                                                                                                                                "name": "languages",
+                                                                                                                                "__children": [
+                                                                                                                                  {
+                                                                                                                                    "type": "answer",
+                                                                                                                                    "value": [
+                                                                                                                                      "hy"
+                                                                                                                                    ],
+                                                                                                                                    "__children": [
+                                                                                                                                      {
+                                                                                                                                        "type": "checkbox",
+                                                                                                                                        "name": "testFrameworks",
+                                                                                                                                        "__children": [
+                                                                                                                                          {
+                                                                                                                                            "type": "answer",
+                                                                                                                                            "value": [
+                                                                                                                                              "gatling"
+                                                                                                                                            ],
+                                                                                                                                            "__children": [
+                                                                                                                                              {
+                                                                                                                                                "type": "confirm",
+                                                                                                                                                "name": "installModules",
+                                                                                                                                                "__children": [
+                                                                                                                                                  {
+                                                                                                                                                    "type": "answer",
+                                                                                                                                                    "value": true,
+                                                                                                                                                    "__children": [
+                                                                                                                                                      {
+                                                                                                                                                        "type": "checkbox",
+                                                                                                                                                        "name": "otherModules",
+                                                                                                                                                        "__children": [
+                                                                                                                                                          {
+                                                                                                                                                            "type": "answer",
+                                                                                                                                                            "value": [
+                                                                                                                                                              {
+                                                                                                                                                                "name": "ignite-jhipster",
+                                                                                                                                                                "version": "1.2.1"
+                                                                                                                                                              }
+                                                                                                                                                            ]
+                                                                                                                                                          }
+                                                                                                                                                        ]
+                                                                                                                                                      }
+                                                                                                                                                    ]
+                                                                                                                                                  }
+                                                                                                                                                ]
+                                                                                                                                              }
+                                                                                                                                            ]
+                                                                                                                                          }
+                                                                                                                                        ]
+                                                                                                                                      }
+                                                                                                                                    ]
+                                                                                                                                  }
+                                                                                                                                ]
+                                                                                                                              }
+                                                                                                                            ]
+                                                                                                                          }
+                                                                                                                        ]
+                                                                                                                      }
+                                                                                                                    ]
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "answer",
+            "value": "microservice",
+            "__children": [
+              {
+                "type": "input",
+                "name": "baseName",
+                "__children": [
+                  {
+                    "type": "answer",
+                    "value": "foo",
+                    "__children": [
+                      {
+                        "type": "input",
+                        "name": "serverPort",
+                        "__children": [
+                          {
+                            "type": "answer",
+                            "value": "foo",
+                            "__children": [
+                              {
+                                "type": "input",
+                                "name": "packageName",
+                                "__children": [
+                                  {
+                                    "type": "answer",
+                                    "value": "foo",
+                                    "__children": [
+                                      {
+                                        "type": "list",
+                                        "name": "serviceDiscoveryType",
+                                        "__children": [
+                                          {
+                                            "type": "answer",
+                                            "value": "eureka",
+                                            "__children": [
+                                              {
+                                                "type": "list",
+                                                "name": "authenticationType",
+                                                "__children": [
+                                                  {
+                                                    "type": "answer",
+                                                    "value": "jwt",
+                                                    "__children": [
+                                                      {
+                                                        "type": "list",
+                                                        "name": "databaseType",
+                                                        "__children": [
+                                                          {
+                                                            "type": "answer",
+                                                            "value": "no",
+                                                            "__children": [
+                                                              {
+                                                                "type": "list",
+                                                                "name": "buildTool",
+                                                                "__children": [
+                                                                  {
+                                                                    "type": "answer",
+                                                                    "value": "maven",
+                                                                    "__children": [
+                                                                      {
+                                                                        "type": "checkbox",
+                                                                        "name": "serverSideOptions",
+                                                                        "__children": [
+                                                                          {
+                                                                            "type": "answer",
+                                                                            "value": [
+                                                                              "enableSwaggerCodegen:true"
+                                                                            ],
+                                                                            "__children": [
+                                                                              {
+                                                                                "type": "confirm",
+                                                                                "name": "enableTranslation",
+                                                                                "__children": [
+                                                                                  {
+                                                                                    "type": "answer",
+                                                                                    "value": true,
+                                                                                    "__children": [
+                                                                                      {
+                                                                                        "type": "list",
+                                                                                        "name": "nativeLanguage",
+                                                                                        "__children": [
+                                                                                          {
+                                                                                            "type": "answer",
+                                                                                            "value": "ar-ly",
+                                                                                            "__children": [
+                                                                                              {
+                                                                                                "type": "checkbox",
+                                                                                                "name": "languages",
+                                                                                                "__children": [
+                                                                                                  {
+                                                                                                    "type": "answer",
+                                                                                                    "value": [
+                                                                                                      "hy"
+                                                                                                    ],
+                                                                                                    "__children": [
+                                                                                                      {
+                                                                                                        "type": "checkbox",
+                                                                                                        "name": "testFrameworks",
+                                                                                                        "__children": [
+                                                                                                          {
+                                                                                                            "type": "answer",
+                                                                                                            "value": [
+                                                                                                              "gatling"
+                                                                                                            ],
+                                                                                                            "__children": [
+                                                                                                              {
+                                                                                                                "type": "confirm",
+                                                                                                                "name": "installModules",
+                                                                                                                "__children": [
+                                                                                                                  {
+                                                                                                                    "type": "answer",
+                                                                                                                    "value": true,
+                                                                                                                    "__children": [
+                                                                                                                      {
+                                                                                                                        "type": "checkbox",
+                                                                                                                        "name": "otherModules",
+                                                                                                                        "__children": [
+                                                                                                                          {
+                                                                                                                            "type": "answer",
+                                                                                                                            "value": [
+                                                                                                                              {
+                                                                                                                                "name": "ignite-jhipster",
+                                                                                                                                "version": "1.2.1"
+                                                                                                                              }
+                                                                                                                            ]
+                                                                                                                          }
+                                                                                                                        ]
+                                                                                                                      }
+                                                                                                                    ]
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "answer",
+            "value": "gateway",
+            "__children": [
+              {
+                "type": "input",
+                "name": "baseName",
+                "__children": [
+                  {
+                    "type": "answer",
+                    "value": "foo",
+                    "__children": [
+                      {
+                        "type": "input",
+                        "name": "serverPort",
+                        "__children": [
+                          {
+                            "type": "answer",
+                            "value": "foo",
+                            "__children": [
+                              {
+                                "type": "input",
+                                "name": "packageName",
+                                "__children": [
+                                  {
+                                    "type": "answer",
+                                    "value": "foo",
+                                    "__children": [
+                                      {
+                                        "type": "list",
+                                        "name": "serviceDiscoveryType",
+                                        "__children": [
+                                          {
+                                            "type": "answer",
+                                            "value": "eureka",
+                                            "__children": [
+                                              {
+                                                "type": "list",
+                                                "name": "authenticationType",
+                                                "__children": [
+                                                  {
+                                                    "type": "answer",
+                                                    "value": "jwt",
+                                                    "__children": [
+                                                      {
+                                                        "type": "list",
+                                                        "name": "databaseType",
+                                                        "__children": [
+                                                          {
+                                                            "type": "answer",
+                                                            "value": "sql",
+                                                            "__children": [
+                                                              {
+                                                                "type": "list",
+                                                                "name": "prodDatabaseType",
+                                                                "__children": [
+                                                                  {
+                                                                    "type": "answer",
+                                                                    "value": "mysql",
+                                                                    "__children": [
+                                                                      {
+                                                                        "type": "list",
+                                                                        "name": "devDatabaseType",
+                                                                        "__children": [
+                                                                          {
+                                                                            "type": "answer",
+                                                                            "value": "h2Disk",
+                                                                            "__children": [
+                                                                              {
+                                                                                "type": "list",
+                                                                                "name": "buildTool",
+                                                                                "__children": [
+                                                                                  {
+                                                                                    "type": "answer",
+                                                                                    "value": "maven",
+                                                                                    "__children": [
+                                                                                      {
+                                                                                        "type": "checkbox",
+                                                                                        "name": "serverSideOptions",
+                                                                                        "__children": [
+                                                                                          {
+                                                                                            "type": "answer",
+                                                                                            "value": [
+                                                                                              "searchEngine:elasticsearch"
+                                                                                            ],
+                                                                                            "__children": [
+                                                                                              {
+                                                                                                "type": "list",
+                                                                                                "name": "clientFramework",
+                                                                                                "__children": [
+                                                                                                  {
+                                                                                                    "type": "answer",
+                                                                                                    "value": "angularX",
+                                                                                                    "__children": [
+                                                                                                      {
+                                                                                                        "type": "confirm",
+                                                                                                        "name": "useSass",
+                                                                                                        "__children": [
+                                                                                                          {
+                                                                                                            "type": "answer",
+                                                                                                            "value": true,
+                                                                                                            "__children": [
+                                                                                                              {
+                                                                                                                "type": "confirm",
+                                                                                                                "name": "enableTranslation",
+                                                                                                                "__children": [
+                                                                                                                  {
+                                                                                                                    "type": "answer",
+                                                                                                                    "value": true,
+                                                                                                                    "__children": [
+                                                                                                                      {
+                                                                                                                        "type": "list",
+                                                                                                                        "name": "nativeLanguage",
+                                                                                                                        "__children": [
+                                                                                                                          {
+                                                                                                                            "type": "answer",
+                                                                                                                            "value": "ar-ly",
+                                                                                                                            "__children": [
+                                                                                                                              {
+                                                                                                                                "type": "checkbox",
+                                                                                                                                "name": "languages",
+                                                                                                                                "__children": [
+                                                                                                                                  {
+                                                                                                                                    "type": "answer",
+                                                                                                                                    "value": [
+                                                                                                                                      "hy"
+                                                                                                                                    ],
+                                                                                                                                    "__children": [
+                                                                                                                                      {
+                                                                                                                                        "type": "checkbox",
+                                                                                                                                        "name": "testFrameworks",
+                                                                                                                                        "__children": [
+                                                                                                                                          {
+                                                                                                                                            "type": "answer",
+                                                                                                                                            "value": [
+                                                                                                                                              "gatling"
+                                                                                                                                            ],
+                                                                                                                                            "__children": [
+                                                                                                                                              {
+                                                                                                                                                "type": "confirm",
+                                                                                                                                                "name": "installModules",
+                                                                                                                                                "__children": [
+                                                                                                                                                  {
+                                                                                                                                                    "type": "answer",
+                                                                                                                                                    "value": true,
+                                                                                                                                                    "__children": [
+                                                                                                                                                      {
+                                                                                                                                                        "type": "checkbox",
+                                                                                                                                                        "name": "otherModules",
+                                                                                                                                                        "__children": [
+                                                                                                                                                          {
+                                                                                                                                                            "type": "answer",
+                                                                                                                                                            "value": [
+                                                                                                                                                              {
+                                                                                                                                                                "name": "ignite-jhipster",
+                                                                                                                                                                "version": "1.2.1"
+                                                                                                                                                              }
+                                                                                                                                                            ]
+                                                                                                                                                          }
+                                                                                                                                                        ]
+                                                                                                                                                      }
+                                                                                                                                                    ]
+                                                                                                                                                  }
+                                                                                                                                                ]
+                                                                                                                                              }
+                                                                                                                                            ]
+                                                                                                                                          }
+                                                                                                                                        ]
+                                                                                                                                      }
+                                                                                                                                    ]
+                                                                                                                                  }
+                                                                                                                                ]
+                                                                                                                              }
+                                                                                                                            ]
+                                                                                                                          }
+                                                                                                                        ]
+                                                                                                                      }
+                                                                                                                    ]
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "answer",
+            "value": "uaa",
+            "__children": [
+              {
+                "type": "input",
+                "name": "baseName",
+                "__children": [
+                  {
+                    "type": "answer",
+                    "value": "foo",
+                    "__children": [
+                      {
+                        "type": "input",
+                        "name": "serverPort",
+                        "__children": [
+                          {
+                            "type": "answer",
+                            "value": "foo",
+                            "__children": [
+                              {
+                                "type": "input",
+                                "name": "packageName",
+                                "__children": [
+                                  {
+                                    "type": "answer",
+                                    "value": "foo",
+                                    "__children": [
+                                      {
+                                        "type": "list",
+                                        "name": "serviceDiscoveryType",
+                                        "__children": [
+                                          {
+                                            "type": "answer",
+                                            "value": "eureka",
+                                            "__children": [
+                                              {
+                                                "type": "list",
+                                                "name": "databaseType",
+                                                "__children": [
+                                                  {
+                                                    "type": "answer",
+                                                    "value": "sql",
+                                                    "__children": [
+                                                      {
+                                                        "type": "list",
+                                                        "name": "prodDatabaseType",
+                                                        "__children": [
+                                                          {
+                                                            "type": "answer",
+                                                            "value": "mysql",
+                                                            "__children": [
+                                                              {
+                                                                "type": "list",
+                                                                "name": "devDatabaseType",
+                                                                "__children": [
+                                                                  {
+                                                                    "type": "answer",
+                                                                    "value": "h2Disk",
+                                                                    "__children": [
+                                                                      {
+                                                                        "type": "list",
+                                                                        "name": "hibernateCache",
+                                                                        "__children": [
+                                                                          {
+                                                                            "type": "answer",
+                                                                            "value": "ehcache",
+                                                                            "__children": [
+                                                                              {
+                                                                                "type": "list",
+                                                                                "name": "buildTool",
+                                                                                "__children": [
+                                                                                  {
+                                                                                    "type": "answer",
+                                                                                    "value": "maven",
+                                                                                    "__children": [
+                                                                                      {
+                                                                                        "type": "checkbox",
+                                                                                        "name": "serverSideOptions",
+                                                                                        "__children": [
+                                                                                          {
+                                                                                            "type": "answer",
+                                                                                            "value": [
+                                                                                              "searchEngine:elasticsearch"
+                                                                                            ],
+                                                                                            "__children": [
+                                                                                              {
+                                                                                                "type": "confirm",
+                                                                                                "name": "enableTranslation",
+                                                                                                "__children": [
+                                                                                                  {
+                                                                                                    "type": "answer",
+                                                                                                    "value": true,
+                                                                                                    "__children": [
+                                                                                                      {
+                                                                                                        "type": "list",
+                                                                                                        "name": "nativeLanguage",
+                                                                                                        "__children": [
+                                                                                                          {
+                                                                                                            "type": "answer",
+                                                                                                            "value": "ar-ly",
+                                                                                                            "__children": [
+                                                                                                              {
+                                                                                                                "type": "checkbox",
+                                                                                                                "name": "languages",
+                                                                                                                "__children": [
+                                                                                                                  {
+                                                                                                                    "type": "answer",
+                                                                                                                    "value": [
+                                                                                                                      "hy"
+                                                                                                                    ],
+                                                                                                                    "__children": [
+                                                                                                                      {
+                                                                                                                        "type": "checkbox",
+                                                                                                                        "name": "testFrameworks",
+                                                                                                                        "__children": [
+                                                                                                                          {
+                                                                                                                            "type": "answer",
+                                                                                                                            "value": [
+                                                                                                                              "gatling"
+                                                                                                                            ],
+                                                                                                                            "__children": [
+                                                                                                                              {
+                                                                                                                                "type": "confirm",
+                                                                                                                                "name": "installModules",
+                                                                                                                                "__children": [
+                                                                                                                                  {
+                                                                                                                                    "type": "answer",
+                                                                                                                                    "value": true,
+                                                                                                                                    "__children": [
+                                                                                                                                      {
+                                                                                                                                        "type": "checkbox",
+                                                                                                                                        "name": "otherModules",
+                                                                                                                                        "__children": [
+                                                                                                                                          {
+                                                                                                                                            "type": "answer",
+                                                                                                                                            "value": [
+                                                                                                                                              {
+                                                                                                                                                "name": "ignite-jhipster",
+                                                                                                                                                "version": "1.2.1"
+                                                                                                                                              }
+                                                                                                                                            ]
+                                                                                                                                          }
+                                                                                                                                        ]
+                                                                                                                                      }
+                                                                                                                                    ]
+                                                                                                                                  }
+                                                                                                                                ]
+                                                                                                                              }
+                                                                                                                            ]
+                                                                                                                          }
+                                                                                                                        ]
+                                                                                                                      }
+                                                                                                                    ]
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
