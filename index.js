@@ -22,28 +22,9 @@ async function main() {
     }
   });
 
-  generate(model)
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config))
-    .then(() => generate(model))
-    .then((config) => model.addConfig(config));
+  while (!model.isComplete()) {
+    model.addConfig(await generate(model));
+  }
 }
 
 main();
