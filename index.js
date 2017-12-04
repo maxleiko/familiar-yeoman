@@ -22,8 +22,12 @@ async function main() {
     }
   });
 
+  const JHIPSTER = 'generator-jhipster/generators/app';
+  const TEST = './TestGen.js';
+
   while (!model.isComplete()) {
-    model.addConfig(await generate(model));
+    console.log(model.getIncomplete());
+    model.addConfig(await generate(TEST, model));
   }
 }
 

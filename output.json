@@ -1,205 +1,453 @@
 {
   "config": [
     {
-      "promptValues": {
-        "packageName": "foo",
-        "nativeLanguage": "ar-ly"
-      },
-      "jhipsterVersion": "4.10.2",
-      "baseName": "foo",
-      "packageName": "foo",
-      "packageFolder": "foo",
-      "serverPort": "8080",
-      "authenticationType": "jwt",
-      "hibernateCache": "ehcache",
-      "clusteredHttpSession": false,
-      "websocket": false,
-      "databaseType": "sql",
-      "devDatabaseType": "h2Disk",
-      "prodDatabaseType": "mysql",
-      "searchEngine": false,
-      "messageBroker": false,
-      "serviceDiscoveryType": false,
-      "buildTool": "maven",
-      "enableSocialSignIn": true,
-      "enableSwaggerCodegen": false,
-      "jwtSecretKey": "9e9c224642450560142ff901082b6baece6e83dc",
-      "clientFramework": "angularX",
-      "useSass": true,
-      "clientPackageManager": "yarn",
-      "applicationType": "monolith",
-      "testFrameworks": [
-        "gatling"
-      ],
-      "jhiPrefix": "jhi",
-      "otherModules": [
-        {
-          "name": "generator-jhipster-module",
-          "version": "2.3.0"
-        }
-      ],
-      "enableTranslation": true,
-      "nativeLanguage": "ar-ly",
-      "languages": [
-        "ar-ly",
-        "hy"
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "two",
+      "q1": true,
+      "q3": "foo",
+      "q4": [
+        "npm"
+      ]
+    },
+    {
+      "q0": "three",
+      "q2": "foo",
+      "q3": "foo",
+      "q4": [
+        "kevoree"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker",
+        "npm"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker",
+        "kevoree"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "npm",
+        "kevoree"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker",
+        "npm",
+        "kevoree"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
+      ]
+    },
+    {
+      "q0": "one",
+      "q3": "foo",
+      "q4": [
+        "docker"
       ]
     }
   ],
   "states": {
-    "applicationType": {
-      "name": "applicationType",
+    "q0": {
+      "name": "q0",
       "transitions": {
-        "monolith": "baseName",
-        "microservice": "baseName"
-      },
-      "expectedTransitions": 4
-    },
-    "baseName": {
-      "name": "baseName",
-      "transitions": {
-        "foo": "serverPort"
-      },
-      "expectedTransitions": 1
-    },
-    "packageName": {
-      "name": "packageName",
-      "transitions": {
-        "foo": "serviceDiscoveryType"
-      },
-      "expectedTransitions": 1
-    },
-    "serviceDiscoveryType": {
-      "name": "serviceDiscoveryType",
-      "transitions": {
-        "false": "authenticationType",
-        "eureka": "authenticationType"
+        "one": "q3",
+        "two": "q1",
+        "three": "q2"
       },
       "expectedTransitions": 3
     },
-    "authenticationType": {
-      "name": "authenticationType",
+    "q3": {
+      "name": "q3",
       "transitions": {
-        "jwt": "databaseType",
-        "uaa": "uaaBaseName"
-      },
-      "expectedTransitions": 3
-    },
-    "databaseType": {
-      "name": "databaseType",
-      "transitions": {
-        "sql": "prodDatabaseType",
-        "no": "buildTool"
-      },
-      "expectedTransitions": 4
-    },
-    "prodDatabaseType": {
-      "name": "prodDatabaseType",
-      "transitions": {
-        "mysql": "devDatabaseType"
-      },
-      "expectedTransitions": 5
-    },
-    "devDatabaseType": {
-      "name": "devDatabaseType",
-      "transitions": {
-        "h2Disk": "hibernateCache"
-      },
-      "expectedTransitions": 3
-    },
-    "hibernateCache": {
-      "name": "hibernateCache",
-      "transitions": {
-        "ehcache": "buildTool"
-      },
-      "expectedTransitions": 4
-    },
-    "buildTool": {
-      "name": "buildTool",
-      "transitions": {
-        "maven": "serverSideOptions",
-        "gradle": "serverSideOptions"
-      },
-      "expectedTransitions": 2
-    },
-    "serverSideOptions": {
-      "name": "serverSideOptions",
-      "transitions": {
-        "enableSocialSignIn:true": "clientFramework",
-        "enableSwaggerCodegen:true": "enableTranslation"
-      },
-      "expectedTransitions": 4
-    },
-    "clientFramework": {
-      "name": "clientFramework",
-      "transitions": {
-        "angularX": "useSass"
-      },
-      "expectedTransitions": 2
-    },
-    "useSass": {
-      "name": "useSass",
-      "transitions": {
-        "true": "enableTranslation"
-      },
-      "expectedTransitions": 2
-    },
-    "enableTranslation": {
-      "name": "enableTranslation",
-      "transitions": {
-        "true": "nativeLanguage",
-        "false": "testFrameworks"
-      },
-      "expectedTransitions": 2
-    },
-    "nativeLanguage": {
-      "name": "nativeLanguage",
-      "transitions": {
-        "ar-ly": "languages"
-      },
-      "expectedTransitions": 36
-    },
-    "languages": {
-      "name": "languages",
-      "transitions": {
-        "hy": "testFrameworks"
-      },
-      "expectedTransitions": 34359738368
-    },
-    "testFrameworks": {
-      "name": "testFrameworks",
-      "transitions": {
-        "gatling": "installModules",
-        "cucumber": "installModules"
-      },
-      "expectedTransitions": 4
-    },
-    "installModules": {
-      "name": "installModules",
-      "transitions": {
-        "true": "otherModules",
-        "false": null
-      },
-      "expectedTransitions": 2
-    },
-    "otherModules": {
-      "name": "otherModules",
-      "transitions": {
-        "[object Object]": "applicationType"
-      },
-      "expectedTransitions": 1125899906842624
-    },
-    "serverPort": {
-      "name": "serverPort",
-      "transitions": {
-        "foo": "packageName"
+        "foo": "q4"
       },
       "expectedTransitions": 1
     },
-    "uaaBaseName": {
-      "name": "uaaBaseName",
+    "q4": {
+      "name": "q4",
       "transitions": {
-        "foo": "databaseType"
+        "docker": "q0",
+        "npm": "q0",
+        "kevoree": "q0",
+        "docker,npm": "q0",
+        "docker,kevoree": "q0",
+        "npm,kevoree": "q0",
+        "docker,npm,kevoree": "q0"
+      },
+      "expectedTransitions": 7
+    },
+    "q1": {
+      "name": "q1",
+      "transitions": {
+        "true": "q3"
+      },
+      "expectedTransitions": 2
+    },
+    "q2": {
+      "name": "q2",
+      "transitions": {
+        "foo": "q3"
       },
       "expectedTransitions": 1
     }
