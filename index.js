@@ -25,6 +25,7 @@ async function main() {
   const JHIPSTER = 'generator-jhipster/generators/app';
   const WEBAPP = 'generator-webapp/app';
   const TEST = './TestGen.js';
+  
   let count = 1;
   while (!model.isComplete()) {
     console.log('Pass', count++);
