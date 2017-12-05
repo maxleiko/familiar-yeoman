@@ -12,9 +12,7 @@
   "devDependencies": {
     "eslint": "^4.11.0",
     "eslint-config-kevoree": "^1.0.1",
-    "generator-jhipster": "^4.10.2"
-  },
-  "engines": {
-    "node": ">=7.10.1"
+    "generator-jhipster": "^4.10.2",
+    "generator-webapp": "^3.0.1"
   }
 }

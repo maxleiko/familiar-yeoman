@@ -1,3 +1,4 @@
+---
 extends: kevoree
 parserOptions:
   ecmaVersion: 2017
