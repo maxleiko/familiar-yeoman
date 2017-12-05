@@ -28,8 +28,14 @@ async function main() {
   let count = 1;
   while (!model.isComplete()) {
     console.log('Pass', count++);
-    model.addConfig(await generate(WEBAPP, model));
-    model.end();
+    try {
+      const config = await generate(WEBAPP, model);
+      model.addConfig(config);
+    } catch (err) {
+      console.error(err.stack);
+    } finally {
+      model.end();
+    }
   }
 }
 

@@ -1,15 +1,68 @@
 {
   "config": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
     {}
   ],
   "states": {
+    "features": {
+      "name": "features",
+      "type": "checkbox",
+      "transitions": {
+        "includeSass": "includeJQuery",
+        "includeBootstrap": "legacyBootstrap",
+        "includeModernizr": "includeJQuery",
+        "includeSass,includeBootstrap": "legacyBootstrap",
+        "includeSass,includeModernizr": "includeJQuery",
+        "includeBootstrap,includeModernizr": "legacyBootstrap",
+        "includeSass,includeBootstrap,includeModernizr": "legacyBootstrap"
+      },
+      "expectedTransitions": 7,
+      "init": true
+    },
+    "includeJQuery": {
+      "name": "includeJQuery",
+      "type": "confirm",
+      "transitions": {
+        "true": "ui",
+        "false": "ui"
+      },
+      "expectedTransitions": 2
+    },
+    "ui": {
+      "name": "ui",
+      "type": "list",
+      "transitions": {
+        "BDD": "action",
+        "TDD": "action"
+      },
+      "expectedTransitions": 2
+    },
     "action": {
       "name": "action",
+      "type": "expand",
       "transitions": {
-        "write": "action"
+        "write": null,
+        "skip": null,
+        "force": null,
+        "abort": null,
+        "diff": "action"
       },
       "expectedTransitions": 5,
       "end": true
+    },
+    "legacyBootstrap": {
+      "name": "legacyBootstrap",
+      "type": "list",
+      "transitions": {
+        "true": "ui",
+        "false": "ui"
+      },
+      "expectedTransitions": 2
     }
   }
 }
