@@ -35,6 +35,7 @@ async function main() {
     } catch (err) {
       console.error(err.stack);
     } finally {
+      await fs.remove('src'); // this is an ugly hack that only concerns Jhipster generator messing up the current workspace
       model.end();
     }
   }
