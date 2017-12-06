@@ -1,68 +1,727 @@
 {
   "config": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    {
+      "promptValues": {
+        "packageName": "foo",
+        "nativeLanguage": "ar-ly"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": false,
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "a980e04f3f67b99efabf2669e2cfb331ade0c4d7",
+      "clientFramework": "angularX",
+      "useSass": true,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        [
+          "gatling"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "otherModules": [
+        {
+          "name": "generator-jhipster-module",
+          "version": "2.3.0"
+        }
+      ],
+      "enableTranslation": true,
+      "nativeLanguage": "ar-ly",
+      "languages": [
+        "ar-ly",
+        "hy"
+      ]
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "foo",
+      "authenticationType": "oauth2",
+      "hibernateCache": "hazelcast",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "mongodb",
+      "devDatabaseType": "mongodb",
+      "prodDatabaseType": "mongodb",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "consul",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "gateway",
+      "testFrameworks": [
+        [
+          "protractor"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "foo",
+      "authenticationType": "uaa",
+      "hibernateCache": "no",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "cassandra",
+      "devDatabaseType": "cassandra",
+      "prodDatabaseType": "cassandra",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "enableTranslation": false,
+      "applicationType": "uaa",
+      "testFrameworks": [
+        [
+          "gatling",
+          "cucumber"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "clientPackageManager": "yarn",
+      "skipClient": true
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "session",
+      "hibernateCache": "no",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "couchbase",
+      "devDatabaseType": "couchbase",
+      "prodDatabaseType": "couchbase",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "rememberMeKey": "a43b37c2a9301a867fa6d63d60861413b3ec197e",
+      "clientFramework": "angular1",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        [
+          "gatling",
+          "protractor"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "hazelcast",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Memory",
+      "prodDatabaseType": "mariadb",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "fb077b7ff24ad18e08a500c1ef52e642faa8be6d",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        [
+          "cucumber",
+          "protractor"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "infinispan",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "postgresql",
+      "prodDatabaseType": "postgresql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "0b191859b0e1bfc489e03b63c26c2b04edfc4c58",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        [
+          "gatling",
+          "cucumber",
+          "protractor"
+        ]
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "no",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "oracle",
+      "prodDatabaseType": "oracle",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "2b9e0cb526e33a73a0e358174cc23551cba1d392",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "mssql",
+      "prodDatabaseType": "mssql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "a1dd878f1e819b0593f4f689da94c53deaea1506",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "mysql",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "0b7c1ea8c2954319abcbaed1c5d3e39332c7f521",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "d1e47d7c878e5bb3c01cc8925fa2638cccd3acbb",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "2087bfeb0d0da4b5f857ae2d751b810c1eedf3fe",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "24ecf8bb216a32abf14f92f30b0598158450d6a0",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "c1deb31eb1a7557e89838bb00efab0826fef696a",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    },
+    {
+      "promptValues": {
+        "packageName": "foo"
+      },
+      "jhipsterVersion": "4.11.1",
+      "baseName": "foo",
+      "packageName": "foo",
+      "packageFolder": "foo",
+      "serverPort": "8080",
+      "authenticationType": "jwt",
+      "hibernateCache": "ehcache",
+      "clusteredHttpSession": false,
+      "websocket": false,
+      "databaseType": "sql",
+      "devDatabaseType": "h2Disk",
+      "prodDatabaseType": "mysql",
+      "searchEngine": false,
+      "messageBroker": false,
+      "serviceDiscoveryType": "false",
+      "buildTool": "maven",
+      "enableSocialSignIn": false,
+      "enableSwaggerCodegen": false,
+      "jwtSecretKey": "43bdd83dc1d2f2d4f7b71477e19e3399480d3b15",
+      "clientFramework": "angularX",
+      "useSass": false,
+      "clientPackageManager": "yarn",
+      "applicationType": "monolith",
+      "testFrameworks": [
+        "gatling"
+      ],
+      "jhiPrefix": "jhi",
+      "enableTranslation": false
+    }
   ],
   "states": {
-    "features": {
-      "name": "features",
-      "type": "checkbox",
-      "transitions": {
-        "includeSass": "includeJQuery",
-        "includeBootstrap": "legacyBootstrap",
-        "includeModernizr": "includeJQuery",
-        "includeSass,includeBootstrap": "legacyBootstrap",
-        "includeSass,includeModernizr": "includeJQuery",
-        "includeBootstrap,includeModernizr": "legacyBootstrap",
-        "includeSass,includeBootstrap,includeModernizr": "legacyBootstrap"
-      },
-      "expectedTransitions": 7,
-      "init": true
-    },
-    "includeJQuery": {
-      "name": "includeJQuery",
-      "type": "confirm",
-      "transitions": {
-        "true": "ui",
-        "false": "ui"
-      },
-      "expectedTransitions": 2
-    },
-    "ui": {
-      "name": "ui",
+    "applicationType": {
+      "name": "applicationType",
       "type": "list",
       "transitions": {
-        "BDD": "action",
-        "TDD": "action"
+        "monolith": "baseName",
+        "microservice": "baseName",
+        "gateway": "baseName",
+        "uaa": "baseName"
+      },
+      "expectedTransitions": 4,
+      "init": true
+    },
+    "baseName": {
+      "name": "baseName",
+      "type": "input",
+      "transitions": {
+        "foo": "packageName"
+      },
+      "expectedTransitions": 1
+    },
+    "packageName": {
+      "name": "packageName",
+      "type": "input",
+      "transitions": {
+        "foo": "serviceDiscoveryType"
+      },
+      "expectedTransitions": 1
+    },
+    "serviceDiscoveryType": {
+      "name": "serviceDiscoveryType",
+      "type": "list",
+      "transitions": {
+        "false": "authenticationType",
+        "eureka": "authenticationType",
+        "consul": "authenticationType"
       },
       "expectedTransitions": 2
+    },
+    "authenticationType": {
+      "name": "authenticationType",
+      "type": "list",
+      "transitions": {
+        "jwt": "databaseType",
+        "uaa": "uaaBaseName",
+        "oauth2": "databaseType",
+        "session": "databaseType"
+      },
+      "expectedTransitions": 3
+    },
+    "databaseType": {
+      "name": "databaseType",
+      "type": "list",
+      "transitions": {
+        "sql": "prodDatabaseType",
+        "no": "buildTool",
+        "mongodb": "buildTool",
+        "cassandra": "buildTool",
+        "couchbase": "buildTool"
+      },
+      "expectedTransitions": 4
+    },
+    "prodDatabaseType": {
+      "name": "prodDatabaseType",
+      "type": "list",
+      "transitions": {
+        "mysql": "devDatabaseType",
+        "mariadb": "devDatabaseType",
+        "postgresql": "devDatabaseType",
+        "oracle": "devDatabaseType",
+        "mssql": "devDatabaseType"
+      },
+      "expectedTransitions": 5
+    },
+    "devDatabaseType": {
+      "name": "devDatabaseType",
+      "type": "list",
+      "transitions": {
+        "h2Disk": "hibernateCache",
+        "h2Memory": "hibernateCache",
+        "postgresql": "hibernateCache",
+        "oracle": "hibernateCache",
+        "mssql": "hibernateCache",
+        "mysql": "hibernateCache"
+      },
+      "expectedTransitions": 3
+    },
+    "hibernateCache": {
+      "name": "hibernateCache",
+      "type": "list",
+      "transitions": {
+        "ehcache": "buildTool",
+        "hazelcast": "buildTool",
+        "infinispan": "buildTool",
+        "no": "buildTool"
+      },
+      "expectedTransitions": 4
+    },
+    "buildTool": {
+      "name": "buildTool",
+      "type": "list",
+      "transitions": {
+        "maven": "serverSideOptions",
+        "gradle": "serverSideOptions"
+      },
+      "expectedTransitions": 2
+    },
+    "serverSideOptions": {
+      "name": "serverSideOptions",
+      "type": "checkbox",
+      "transitions": {
+        "enableSocialSignIn:true": "clientFramework",
+        "enableSwaggerCodegen:true": "enableTranslation",
+        "clusteredHttpSession:hazelcast": "clientFramework",
+        "messageBroker:kafka": "enableTranslation",
+        "websocket:spring-websocket": "clientFramework",
+        "searchEngine:elasticsearch": "clientFramework",
+        "enableSocialSignIn:true,searchEngine:elasticsearch": "clientFramework",
+        "enableSocialSignIn:true,clusteredHttpSession:hazelcast": "clientFramework",
+        "enableSocialSignIn:true,websocket:spring-websocket": "clientFramework",
+        "enableSocialSignIn:true,enableSwaggerCodegen:true": "clientFramework",
+        "enableSocialSignIn:true,messageBroker:kafka": "clientFramework",
+        "searchEngine:elasticsearch,websocket:spring-websocket": "clientFramework",
+        "searchEngine:elasticsearch,enableSwaggerCodegen:true": "clientFramework",
+        "searchEngine:elasticsearch,messageBroker:kafka": "clientFramework",
+        "websocket:spring-websocket,enableSwaggerCodegen:true": "clientFramework"
+      },
+      "expectedTransitions": 31
+    },
+    "clientFramework": {
+      "name": "clientFramework",
+      "type": "list",
+      "transitions": {
+        "angularX": "useSass",
+        "angular1": "useSass"
+      },
+      "expectedTransitions": 2
+    },
+    "useSass": {
+      "name": "useSass",
+      "type": "confirm",
+      "transitions": {
+        "true": "enableTranslation",
+        "false": "enableTranslation"
+      },
+      "expectedTransitions": 2
+    },
+    "enableTranslation": {
+      "name": "enableTranslation",
+      "type": "confirm",
+      "transitions": {
+        "true": "nativeLanguage",
+        "false": "testFrameworks"
+      },
+      "expectedTransitions": 2
+    },
+    "nativeLanguage": {
+      "name": "nativeLanguage",
+      "type": "list",
+      "transitions": {
+        "ar-ly": "languages"
+      },
+      "expectedTransitions": 36
+    },
+    "languages": {
+      "name": "languages",
+      "type": "checkbox",
+      "transitions": {
+        "hy": "testFrameworks"
+      },
+      "expectedTransitions": 34359738367
+    },
+    "testFrameworks": {
+      "name": "testFrameworks",
+      "type": "checkbox",
+      "transitions": {
+        "gatling": "installModules",
+        "cucumber": "installModules",
+        "protractor": "installModules",
+        "gatling,cucumber": "installModules",
+        "gatling,protractor": "installModules",
+        "cucumber,protractor": "installModules",
+        "gatling,cucumber,protractor": "installModules"
+      },
+      "expectedTransitions": 7
+    },
+    "installModules": {
+      "name": "installModules",
+      "type": "confirm",
+      "transitions": {
+        "true": "otherModules",
+        "false": "action"
+      },
+      "expectedTransitions": 2,
+      "end": true
+    },
+    "otherModules": {
+      "name": "otherModules",
+      "type": "checkbox",
+      "transitions": {
+        "[object Object]": null
+      },
+      "expectedTransitions": 1125899906842623,
+      "end": true
+    },
+    "serverPort": {
+      "name": "serverPort",
+      "type": "input",
+      "transitions": {
+        "foo": "packageName"
+      },
+      "expectedTransitions": 1
+    },
+    "uaaBaseName": {
+      "name": "uaaBaseName",
+      "type": "input",
+      "transitions": {
+        "foo": "databaseType"
+      },
+      "expectedTransitions": 1
     },
     "action": {
       "name": "action",
       "type": "expand",
       "transitions": {
-        "write": null,
-        "skip": null,
+        "write": "action",
+        "skip": "action",
         "force": null,
-        "abort": null,
+        "abort": "action",
         "diff": "action"
       },
       "expectedTransitions": 5,
       "end": true
-    },
-    "legacyBootstrap": {
-      "name": "legacyBootstrap",
-      "type": "list",
-      "transitions": {
-        "true": "ui",
-        "false": "ui"
-      },
-      "expectedTransitions": 2
     }
   }
 }
