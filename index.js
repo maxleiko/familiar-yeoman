@@ -4,8 +4,10 @@ const generate = require('./lib/generate');
 const attachExitHandler = require('./lib/attach-exit-handler');
 
 async function main() {
+  const CWD = process.cwd();
   const model = new Model();
   attachExitHandler((options, err) => {
+    process.chdir(CWD);
     if (options.cleanup) {
       console.log('Writing configurations to "output.json"...');
       // write model to output.json
@@ -35,7 +37,6 @@ async function main() {
     } catch (err) {
       console.error(err.stack);
     } finally {
-      await fs.remove('src'); // this is an ugly hack that only concerns Jhipster generator messing up the current workspace
       model.end();
     }
   }
