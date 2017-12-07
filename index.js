@@ -42,7 +42,6 @@ async function main() {
   let count = 1;
   while (!model.isComplete()) {
     console.log('Pass', count++);
-    console.log(model.getIncomplete());
     try {
       const config = await generate(JHIPSTER, model);
       if (config.jwtSecretKey) {
