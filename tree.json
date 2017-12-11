@@ -1,0 +1,327 @@
+{
+  "root": true,
+  "__children": [
+    {
+      "name": "appType",
+      "type": "list",
+      "expectedTransitions": 2,
+      "__children": [
+        {
+          "type": "answer",
+          "value": "client",
+          "__children": [
+            {
+              "name": "framework",
+              "type": "list",
+              "expectedTransitions": 4,
+              "__children": [
+                {
+                  "type": "answer",
+                  "value": "React",
+                  "__children": [
+                    {
+                      "name": "clientOptions",
+                      "type": "list",
+                      "expectedTransitions": 3,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "redux",
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "answer",
+                          "value": "mobx",
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "answer",
+                          "value": false,
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "answer",
+                  "value": "Angular JS",
+                  "__children": [
+                    {
+                      "name": "clientOptions",
+                      "type": "list",
+                      "expectedTransitions": 3,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "ng-router",
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "answer",
+                          "value": "Custom router",
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "answer",
+                          "value": false,
+                          "__children": [
+                            {
+                              "name": "testFramework",
+                              "type": "list",
+                              "expectedTransitions": 3,
+                              "__children": [
+                                {
+                                  "type": "answer",
+                                  "value": "karma"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "gatling"
+                                },
+                                {
+                                  "type": "answer",
+                                  "value": "protractor"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "answer",
+                  "value": "Angular 4",
+                  "__children": [
+                    {
+                      "name": "testFramework",
+                      "type": "list",
+                      "expectedTransitions": 3,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "karma"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "gatling"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "protractor"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "answer",
+                  "value": "Vue",
+                  "__children": [
+                    {
+                      "name": "testFramework",
+                      "type": "list",
+                      "expectedTransitions": 3,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "karma"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "gatling"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "protractor"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "answer",
+          "value": "server",
+          "__children": [
+            {
+              "name": "db",
+              "type": "list",
+              "expectedTransitions": 3,
+              "__children": [
+                {
+                  "type": "answer",
+                  "value": "MySQL",
+                  "__children": [
+                    {
+                      "name": "languageLevel",
+                      "type": "list",
+                      "expectedTransitions": 2,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "7"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "8"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "answer",
+                  "value": "Postgres",
+                  "__children": [
+                    {
+                      "name": "languageLevel",
+                      "type": "list",
+                      "expectedTransitions": 2,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "7"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "8"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "answer",
+                  "value": "MariaDB",
+                  "__children": [
+                    {
+                      "name": "languageLevel",
+                      "type": "list",
+                      "expectedTransitions": 2,
+                      "__children": [
+                        {
+                          "type": "answer",
+                          "value": "7"
+                        },
+                        {
+                          "type": "answer",
+                          "value": "8"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

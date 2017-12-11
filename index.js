@@ -13,16 +13,16 @@ async function main() {
   model.setAnswer('serverPort', 8080);
   model.setAnswer('testFrameworks', ['gatling', 'cucumber', 'protractor']);
   model.setAnswer('installModules', false);
-  // model.setAnswer('serverSideOptions', ['enableSocialSignIn:true', 'searchEngine:elasticsearch', 'websocket:spring-websocket', 'enableSwaggerCodegen:true', 'messageBroker:kafka']);
 
   attachExitHandler((options, err) => {
     process.chdir(CWD);
     if (options.cleanup) {
-      console.log('Writing configurations to "output.json"...');
       // write configs to configs.csv
+      console.log('Writing configurations to configs.csv...');
       fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
-      // write state machine to states.json
-      fs.writeJsonSync('states.json', model.states, { spaces: 2 });
+      // write tree to tree.json
+      console.log('Writing tree to tree.json...');
+      fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
       console.log('Done');
     }
 
@@ -43,7 +43,7 @@ async function main() {
   while (!model.isComplete()) {
     console.log('Pass', count++);
     try {
-      const config = await generate(JHIPSTER, model);
+      const config = await generate(TEST, model);
       if (config.jwtSecretKey) {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
