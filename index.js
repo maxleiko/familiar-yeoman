@@ -43,7 +43,7 @@ async function main() {
   while (!model.isComplete()) {
     console.log('Pass', count++);
     try {
-      const config = await generate(TEST, model);
+      const config = await generate(JHIPSTER, model);
       if (config.jwtSecretKey) {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
