@@ -141,3 +141,5 @@ Desktop.ini
 .eslintcache
 
 src
+configs.csv
+tree.json
