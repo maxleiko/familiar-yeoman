@@ -17,23 +17,7 @@ async function main() {
   attachExitHandler((options, err) => {
     process.chdir(CWD);
     if (options.cleanup) {
-      if (!model.currentNode.value.root) {
-        console.log(model.currentNode.walkUp()
-          .filter((n) => n.value.type)
-          .map((node) => {
-            if (node.value.type === 'answer') {
-              return node.value.value;
-            } else {
-              return node.value.name;
-            }
-          }));
-      }
-      // write configs to configs.csv
-      console.log('Writing configurations to configs.csv...');
-      fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
-      // write tree to tree.json
-      console.log('Writing tree to tree.json...');
-      fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
+      writeFiles(model);
       console.log('Done');
     }
 
@@ -59,12 +43,24 @@ async function main() {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
       model.addConfig(config);
+      if (count%50 === 0) {
+        writeFiles(model);
+      }
     } catch (err) {
       console.error(err.stack);
     } finally {
       model.end();
     }
   }
+}
+
+function writeFiles(model) {
+  // write configs to configs.csv
+  console.log('Writing configurations to configs.csv...');
+  fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
+  // write tree to tree.json
+  console.log('Writing tree to tree.json...');
+  fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
 main();
