@@ -15,9 +15,8 @@ async function main() {
   model.setAnswer('installModules', false);
 
   attachExitHandler((options, err) => {
-    process.chdir(CWD);
     if (options.cleanup) {
-      writeFiles(model);
+      writeFiles(CWD, model);
       console.log('Done');
     }
 
@@ -44,7 +43,7 @@ async function main() {
       }
       model.addConfig(config);
       if (count%50 === 0) {
-        writeFiles(model);
+        writeFiles(CWD, model);
       }
     } catch (err) {
       console.error(err.stack);
@@ -54,7 +53,8 @@ async function main() {
   }
 }
 
-function writeFiles(model) {
+function writeFiles(cwd, model) {
+  process.chdir(cwd);
   // write configs to configs.csv
   console.log('Writing configurations to configs.csv...');
   fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
