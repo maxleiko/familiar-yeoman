@@ -36,6 +36,7 @@ async function main() {
   // const TEST = './TestGen.js';
 
   let count = 1;
+  console.log('Go grab a coffee that might last long...');
   while (!model.isComplete()) {
     debug('Pass', count++);
     try {
