@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const debug = require('debug')('familiar-yeoman');
 const Model = require('./lib/model');
 const generate = require('./lib/generate');
 const attachExitHandler = require('./lib/attach-exit-handler');
@@ -17,7 +18,8 @@ async function main() {
   attachExitHandler((options, err) => {
     if (options.cleanup) {
       writeFiles(CWD, model);
-      console.log('Done');
+      console.log('Generated: configs.csv, tree.json');
+      console.log('Bye.');
     }
 
     if (err) {
@@ -30,19 +32,19 @@ async function main() {
   });
 
   const JHIPSTER = 'generator-jhipster/generators/app';
-  const WEBAPP = 'generator-webapp/app';
-  const TEST = './TestGen.js';
+  // const WEBAPP = 'generator-webapp/app';
+  // const TEST = './TestGen.js';
 
   let count = 1;
   while (!model.isComplete()) {
-    console.log('Pass', count++);
+    debug('Pass', count++);
     try {
       const config = await generate(JHIPSTER, model);
       if (config.jwtSecretKey) {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
       model.addConfig(config);
-      if (count%50 === 0) {
+      if (count%1000 === 0) {
         writeFiles(CWD, model);
       }
     } catch (err) {
@@ -56,10 +58,8 @@ async function main() {
 function writeFiles(cwd, model) {
   process.chdir(cwd);
   // write configs to configs.csv
-  console.log('Writing configurations to configs.csv...');
   fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
   // write tree to tree.json
-  console.log('Writing tree to tree.json...');
   fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
