@@ -1,5 +1,6 @@
-FROM node:8.9.3-alpine
+FROM       node:8.9.3-alpine
 
-COPY . /home/node/app/
+COPY       . /home/node/app/
 
-CMD ["node", "/home/node/app/index.js"]
+ENTRYPOINT ["node", "/home/node/app/index.js"]
+CMD ["all"]

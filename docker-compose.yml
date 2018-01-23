@@ -1,0 +1,14 @@
+version: '2'
+services:
+  microservice:
+    image: maxleiko/famster
+    command: microservice
+  monolith:
+    image: maxleiko/famster
+    command: monolith
+  gateway:
+    image: maxleiko/famster
+    command: gateway
+  uaa:
+    image: maxleiko/famster
+    command: uaa

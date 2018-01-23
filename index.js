@@ -5,10 +5,15 @@ const generate = require('./lib/generate');
 const attachExitHandler = require('./lib/attach-exit-handler');
 
 async function main() {
+  const appType = process.argv[2] || 'all';
   const CWD = process.cwd();
   const model = new Model();
 
   model.setAnswer('action', 'skip');
+  if (appType !== 'all') {
+    console.log('Generating configs for `applicationType: '+appType+'`');
+    model.setAnswer('applicationType', appType);
+  }
   model.setAnswer('nativeLanguage', 'en');
   model.setAnswer('languages', ['en']);
   model.setAnswer('serverPort', 8080);
@@ -18,7 +23,7 @@ async function main() {
   attachExitHandler((options, err) => {
     if (options.cleanup) {
       writeFiles(CWD, model);
-      console.log('Generated: configs.csv, tree.json');
+      console.log('Generated: configs.csv');
       console.log('Bye.');
     }
 
@@ -40,10 +45,13 @@ async function main() {
   while (!model.isComplete()) {
     debug('Pass', count++);
     try {
+      const start = Date.now();
       const config = await generate(JHIPSTER, model);
       if (config.jwtSecretKey) {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
+      const end = Date.now();
+      config.__time = end - start;
       model.addConfig(config);
       if (count%1000 === 0) {
         writeFiles(CWD, model);
@@ -59,9 +67,9 @@ async function main() {
 function writeFiles(cwd, model) {
   process.chdir(cwd);
   // write configs to configs.csv
-  fs.writeFileSync('configs.csv', model.getConfigs(), 'utf-8');
+  fs.writeFileSync(`configs.csv`, model.getConfigs(), 'utf-8');
   // write tree to tree.json
-  //fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
+  fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
 main();
