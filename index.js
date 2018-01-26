@@ -69,7 +69,7 @@ function writeFiles(cwd, model) {
   // write configs to configs.csv
   fs.writeFileSync(`configs.csv`, model.getConfigs(), 'utf-8');
   // write tree to tree.json
-  fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
+  //fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
 main();
