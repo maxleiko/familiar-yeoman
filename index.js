@@ -1,24 +1,26 @@
 const fs = require('fs-extra');
+const path = require('path');
 const debug = require('debug')('familiar-yeoman');
 const Model = require('./lib/model');
 const generate = require('./lib/generate');
 const attachExitHandler = require('./lib/attach-exit-handler');
+const config = require('./lib/default-config');
 
 async function main() {
-  const appType = process.argv[2] || 'all';
+  const configFile = process.argv[2];
+  if (configFile) {
+    Object.assign(config, require(path.resolve(configFile)));
+  }
   const CWD = process.cwd();
   const model = new Model();
 
+  // default answers
   model.setAnswer('action', 'skip');
-  if (appType !== 'all') {
-    console.log('Generating configs for `applicationType: '+appType+'`');
-    model.setAnswer('applicationType', appType);
-  }
-  model.setAnswer('nativeLanguage', 'en');
-  model.setAnswer('languages', ['en']);
-  model.setAnswer('serverPort', 8080);
-  model.setAnswer('testFrameworks', ['gatling', 'cucumber', 'protractor']);
-  model.setAnswer('installModules', false);
+  // user-defined answers
+  console.log('Forced answers:', config);
+  Object.keys(config).forEach((key) => {
+    model.setAnswer(key, config[key]);
+  });
 
   attachExitHandler((options, err) => {
     if (options.cleanup) {
@@ -69,7 +71,7 @@ function writeFiles(cwd, model) {
   // write configs to configs.csv
   fs.writeFileSync(`configs.csv`, model.getConfigs(), 'utf-8');
   // write tree to tree.json
-  //fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
+  fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
 main();

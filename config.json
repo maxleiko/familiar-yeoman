@@ -1,0 +1,10 @@
+{
+  "applicationType": "monolith",
+  "clusteredHttpSession": true,
+  "websocket": true,
+  "searchEngine": true,
+  "messageBroker": true,
+  "serviceDiscoveryType": true,
+  "enableSocialSignIn": true,
+  "enableSwaggerCodegen": true
+}

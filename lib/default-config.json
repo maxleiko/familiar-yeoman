@@ -1,0 +1,8 @@
+{
+  "action": "skip",
+  "nativeLanguage": "en",
+  "languages": ["en"],
+  "serverPort": 8080,
+  "testFrameworks": ["gatling", "cucumber", "protractor"],
+  "installModules": false
+}
