@@ -4,7 +4,7 @@
 
 ## Docker
 ```sh
-docker run -d -v `pwd`/config.json:/tmp/config.json maxleiko/famster
+docker run -d -v `pwd`/config.json:/tmp/config.json maxleiko/famster /tmp/config.json
 ```
 With `config.json` containing the preset answers that you want to give:
 ```json
