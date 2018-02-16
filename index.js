@@ -38,9 +38,9 @@ async function main() {
     }
   });
 
-  const JHIPSTER = 'generator-jhipster/generators/app';
-  // const WEBAPP = 'generator-webapp/app';
-  // const TEST = './TestGen.js';
+  const GENERATOR = 'generator-jhipster/generators/app';
+  // const GENERATOR = 'generator-webapp/app';
+  // const GENERATOR = './TestGen.js';
 
   let count = 1;
   console.log('Go grab a coffee that might last long...');
@@ -48,7 +48,7 @@ async function main() {
     debug('Pass', count++);
     try {
       const start = Date.now();
-      const config = await generate(JHIPSTER, model);
+      const config = await generate(GENERATOR, model);
       if (config.jwtSecretKey) {
         config.jwtSecretKey = 'aaaabbbbccccddddeeeeffffgggghhhhiiiijjjj';
       }
@@ -71,7 +71,7 @@ function writeFiles(cwd, model) {
   // write configs to configs.csv
   fs.writeFileSync(`configs.csv`, model.getConfigs(), 'utf-8');
   // write tree to tree.json
-  fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
+  //fs.writeJsonSync('tree.json', JSON.parse(model.tree.toString()), { spaces: 2 });
 }
 
 main();

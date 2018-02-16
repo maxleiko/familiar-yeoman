@@ -1,10 +1,36 @@
 {
+  "jhipsterVersion": "4.8.2",
+  "baseName": "jhijhi",
+  "packageName": "foo",
+  "packageFolder": "foo",
+  "serverPort": "8080",
+  "authenticationType": "jwt",
+  "hibernateCache": "ehcache",
+  "clusteredHttpSession": false,
+  "websocket": false,
+  "databaseType": "sql",
+  "devDatabaseType": "h2Disk",
+  "prodDatabaseType": "mysql",
+  "searchEngine": false,
+  "messageBroker": false,
+  "serviceDiscoveryType": false,
+  "buildTool": "maven",
+  "enableSocialSignIn": false,
+  "enableSwaggerCodegen": false,
+  "jwtSecretKey": "cdbefe249b5c2e3091ecb3f3aaff2cabb496d4ca",
+  "clientFramework": "angularX",
+  "useSass": false,
+  "clientPackageManager": "yarn",
   "applicationType": "monolith",
-  "clusteredHttpSession": true,
-  "websocket": true,
-  "searchEngine": true,
-  "messageBroker": true,
-  "serviceDiscoveryType": true,
-  "enableSocialSignIn": true,
-  "enableSwaggerCodegen": true
+  "testFrameworks": [
+    "gatling",
+    "cucumber",
+    "protractor"
+  ],
+  "jhiPrefix": "jhi",
+  "enableTranslation": true,
+  "nativeLanguage": "en",
+  "languages": [
+    "en"
+  ]
 }
